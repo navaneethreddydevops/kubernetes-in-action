@@ -13,5 +13,14 @@ pipeline {
       }
     }
 
+    stage('Timestamps') {
+      steps {
+        timestamps() {
+          sleep 20
+        }
+
+      }
+    }
+
   }
 }
